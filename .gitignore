@@ -1,0 +1,6 @@
+# Ignoring puzzle inputs because they are large and unique to each user
+*.txt
+
+# Ignoring compiled Python files
+__pycache__/
+*.pyc
