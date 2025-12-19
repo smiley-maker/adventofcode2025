@@ -77,11 +77,9 @@ if __name__ == "__main__":
                 data[l].append(lines[l][i])
 
     data = rotate_matrix(data)
-    print(data[0])
-    print(reformulate_row(data[0][1:]))
+
     total = 0
     for l in data:
-        print([l[0]] + reformulate_row(l[1:]))
         total += solve_problem([l[0]] + reformulate_row(l[1:]))
     
     print(total)
